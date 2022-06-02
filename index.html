@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>KAWASAKI BRAVE THUNDERS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+</head>
+<body onresize="resizeWindow()">
+    <!-- Entertaiment Area -->
+    <div id="div-entertaiment" class="div-entertaiment">
+        <div class="div-header-menu">
+            <div class="div-logo">
+                <!-- Change Logo  -->
+                <img src="./img/logo-thumb.png" alt="">
+                <span>KAWASAKI BRAVE THUNDERS</span>
+            </div>
+            <div class="div-menu">
+                <!-- Add Array Menu -->
+                <ul>
+                    <li><a class="seleted" href="#div-entertaiment">ENTERTAIMENT</a></li>
+                    <li><a href="#div-play">PLAY</a></li>
+                    <li><a href="#div-arena-food">ARENA FOOD</a></li>
+                    <li><a href="#div-event">EVENT</a></li>
+                    <li><a href="#div-hight-light">HIGHTLIGHT</a></li>
+                    <li><a href="#div-pick-up">PICK UP</a></li>
+                    <li><a href="#div-sns">SNS</a></li>
+                    <li><a href="https://kawasaki-bravethunders.com/">OFFICAL WEBSITE <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div-header-menu-mobile" style="display: none;">
+            <div class="div-logo">
+                <!-- Change Logo  -->
+                <img src="./img/logo-thumb.png" alt="">
+                <span>KAWASAKI BRAVE THUNDERS</span>
+            </div>
+            <div class="div-menu" onclick="openMobileMenu()">
+                <i class="fa fa-bars" aria-hidden="true" id="iClMenu"></i>
+            </div>
+            <div class="menu-list" id="menu-list-mobile">
+                <ul>
+                    <li><a class="seleted" href="#div-entertaiment">ENTERTAIMENT</a></li>
+                    <li><a href="#div-play">PLAY</a></li>
+                    <li><a href="#div-arena-food">ARENA FOOD</a></li>
+                    <li><a href="#div-event">EVENT</a></li>
+                    <li><a href="#div-hight-light">HIGHTLIGHT</a></li>
+                    <li><a href="#div-pick-up">PICK UP</a></li>
+                    <li><a href="#div-sns">SNS</a></li>
+                    <li><a href="https://kawasaki-bravethunders.com/">OFFICAL WEBSITE <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="div-video-bg kw-animate-bottom-dl-10">
+            <div class="div-video-data">
+                <!-- Change Intro Video -->
+                <video controls autoplay="autoplay">
+                    <source src="./video/video-bg.mp4" type="video/mp4" />
+                </video>
+                
+                <div class="div-video-overlay"></div>
+            </div>
+            <!-- Add Array Ads Title -->
+            <div class="div-video-des">
+                <div class="video-des-item kw-animate-left-dl-5">
+                    <span>知識不要の</span>
+                </div>
+                <div class="video-des-item kw-animate-left-dl-10">
+                    <span>アリーナ</span>
+                </div>
+                <div class="video-des-item kw-animate-left-dl-15">
+                    <span>エンターテインメント</span>
+                </div>
+            </div>
+        </div>
+        <div class="div-bot-info">
+            <div class="div-over-view clearfix">
+                <!-- Should to add 3 items in here. First Item in 'first-img' div and other two should be in 'lst-img' -->
+                <div class="fisrt-img kw-animate-left">
+                    <img src="./img/first-overview.jpeg" alt=""/>
+                    <div class="first-img-border"></div>
+                    <div class="first-img-border-child"></div>
+                </div>
+                <div class="detail-info">
+                    <h2 class="kw-animate-bottom-dl-10">“リーグ No7" の観戦体験</h2>
+                    <p class="kw-animate-bottom-dl-15">炎やビジョンと連動した演出。アリーナDJのDJタイムでお出迎え</p>
+                </div>
+                <div class="lst-img">
+                    <div class="shape kw-animate-left-dl-10"></div>
+                    <div class="item-img kw-animate-left-dl-15">
+                        <img src="./img/second-overview.png" alt="">
+                    </div>
+                    <div class="item-img kw-animate-left-dl-20">
+                        <img src="./img/third-overview.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="clearfix"></div>
+
+            </div>
+            <img class="dot-shape kw-animate-right-dl-5" src="./img/dot-pattern.png" alt="">
+        </div>
+    </div>
+
+    <!-- Play Area -->
+    <div id="div-play" class="div-play">
+        <div class="div-img">
+            <span class="kw-animate-left-dl-20 kw-paused">PLAY</span>
+            <img class="kw-animate-zoom kw-paused" src="./img/play.png" alt="">
+        </div>
+        <div class="div-des">
+            <div class="lst-title kw-animate-bottom-dl-10 kw-paused">
+                <!-- Add array Title -->
+                <div class="des-item">
+                    <span>日本最高レベルの</span>
+                </div>
+                <div class="des-item">
+                    <span>バスケットボール</span>
+                </div>
+            </div>
+            <!-- Short Description -->
+            <div class="div-short-des kw-animate-bottom-dl-15 kw-paused">
+                <p>試合によっては100点に達する 得点シーンの多さと、スピード感あるゲーム展開。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Food Area -->
+    <div id="div-arena-food" class="div-arena-food">
+        <div class="div-arena-info">
+            <div class="div-des">
+                <div class="lst-title kw-animate-bottom-dl-10 kw-paused">
+                    <!-- Add array Title -->
+                    <div class="des-item">
+                        <span>おいしい食事と</span>
+                    </div>
+                    <div class="des-item">
+                        <span>一緒に観戦すれば、</span>
+                    </div>
+                    <div class="des-item">
+                        <span>もっと楽しい。</span>
+                    </div>
+                </div>
+                <!-- Short Description -->
+                <div class="div-short-des kw-animate-bottom-dl-15 kw-paused">
+                    <p>クラブオリジナルのポテトチップス・クラフトビールは、 対戦クラブのファンも買い求める人気商品。</p>
+                </div>
+            </div>
+            <div class="div-img">
+                <span class="kw-animate-left-dl-10 kw-paused">ARENA FOOD</span>
+                <img class="kw-animate-zoom kw-paused" src="./img/arena-food.png" alt="">
+            </div>
+        </div>
+        <div class="div-food">
+            <!-- Add Array food -->
+            <div class="food-item kw-animate-right-dl-15 kw-paused">
+                <img src="./img/1.png" alt="">
+            </div>
+            <div class="food-item kw-animate-right-dl-15 kw-paused">
+                <img src="./img/2.png" alt="">
+            </div>
+            <div class="food-item kw-animate-right-dl-15 kw-paused">
+                <img src="./img/3.png" alt="">
+            </div>
+            <div class="food-item kw-animate-right-dl-15 kw-paused">
+                <img src="./img/1.png" alt="">
+            </div>
+            <div class="shape-food kw-animate-right-dl-5 kw-paused"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Even Area -->
+    <div id="div-event" class="div-event">
+        <div class="title kw-animate-right-dl-5 kw-paused">
+            <span>Event</span>
+        </div>
+        <div class="lst-img">
+            <img class="img-main kw-animate-right-dl-10 kw-paused" src="./img/event.jpeg" alt="">
+            <img class="img-child kw-animate-right-dl-15 kw-paused" src="./img/even-1.jpeg" alt="">
+        </div>
+        <div class="lst-title">
+            <!-- Add array Title -->
+            <div class="des-item kw-animate-right-dl-10 kw-paused">
+                <span>観戦以外にも</span>
+            </div>
+            <div class="des-item kw-animate-right-dl-10 kw-paused">
+                <span>楽しみきれる</span>
+            </div>
+            <div class="des-item kw-animate-right-dl-10 kw-paused">
+                <span>充実したイベント。</span>
+            </div>
+        </div>
+        <!-- Short Description -->
+        <div class="div-short-des kw-animate-bottom-dl-15 kw-paused">
+            <p>お子様に人気のフリースローチャレンジや、 持ち帰りできるグッズが客席に投げ込まれる 『サンダースバズーカショット』などイベント盛りだくさん。</p>
+        </div>
+    </div>
+
+    <!-- Hightlight Area -->
+    <div id="div-hight-light" class="div-hight-light">
+        <div class="img-bg">
+            <img src="./img/highlight-bg.png" alt="">
+        </div>
+        <div class="blogs">
+            <div class="blog-content">
+                <div class="title kw-animate-bottom-dl-10 kw-paused">
+                    <h2>その他も見どころ満載!!</h2>
+                </div>
+                <div class="lst-blog">
+                    <div class="item kw-animate-left-dl-10 kw-paused">
+                        <img src="./img/blog-1.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">天候に左右されない</span>
+                                <span class="item">快適な空間</span>
+                            </div>
+                            <p class="short-div">エアコンの効いた室内だから、 雨にぬれたり寒すぎる心配がありません。</p>
+                        </div>
+                    
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused revert">
+                        <img src="./img/blog-1.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">天候に左右されない</span>
+                                <span class="item">快適な空間</span>
+                            </div>
+                            <p class="short-div">エアコンの効いた室内だから、 雨にぬれたり寒すぎる心配がありません。</p>
+                        </div>
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused">
+                        <img src="./img/blog-2.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">スペシャル ゲストと</span>
+                                <span class="item">一緒に楽しもう</span>
+                            </div>
+                            <p class="short-div">開催日によって、一緒にホームゲームを 盛り上げる豪華ゲストが来場することも。</p>
+                        </div>
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused revert">
+                        <img src="./img/blog-3.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">イケメン選手が近い</span>
+                            </div>
+                            <p class="short-div">自分のカメラでお気に入りの1枚を 撮影することも、ファンの楽しみ。</p>
+                        </div>
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused">
+                        <img src="./img/blog-4.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">女性ファンが多い</span>
+                            </div>
+                            <p class="short-div">男性・女性ファンの人数は同じぐらい。 みんなが安心して楽しめる雰囲気。</p>
+                        </div>
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused revert">
+                        <img src="./img/blog-5.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">はじめての観戦でも安心</span>
+                            </div>
+                            <p class="short-div">ビジョンのルール説明や、試合前の応援練習で、「楽しみ方をご案内。</p>
+                        </div>
+                    </div>
+                    <div class="item kw-animate-left-dl-10 kw-paused">
+                        <img src="./img/blog-6.png" alt="">
+                        <div class="des">
+                            <div class="title">
+                                <span class="item">推し活がアツい</span>
+                            </div>
+                            <p class="short-div">お気に入り選手を決めると楽しさ倍増! グッズを集めたり、タオルをかかげて “推し”の活躍を後押し。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pickup Area -->
+    <div id="div-pick-up" class="div-pick-up">
+        <div class="news">
+            <div class="title kw-animate-bottom-dl-5 kw-paused">
+                <span>PICK UP</span>
+            </div>
+            <div class="lst-news kw-animate-left-dl-15 kw-paused">
+                <div class="items">
+                    <img src="./img/news-1.png" alt="">
+                    <a href="">ここにテキストが入りますここにテキストが入り ますここにテキストが入ります。</a>
+                </div>
+                <div class="items">
+                    <img src="./img/news-2.png" alt="">
+                    <a href="">ここにテキストが入りますここにテキストが入り ますここにテキストが入ります。</a>
+                </div>
+            </div>
+        </div>
+        <div class="socials">
+            <div class="title kw-animate-bottom-dl-5 kw-paused">
+                <span>公式SNSをチェック!</span>
+            </div>
+            <ul class="kw-animate-left-dl-10 kw-paused">
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>Facebook</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>Twitter</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>LINE</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>Instagram</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>Youtube</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-arrow-right"></i>Tiktok</a>
+                </li>
+            </ul>
+        </div>
+        <div id="ctrl-top" class="ctrl-top">
+            <a href="#" onclick=" backToTop()" ><i class="fa fa-chevron-up" aria-hidden="true"></i>TOP</a>
+        </div>
+    </div>
+
+    <!-- Footer Area -->
+    <div id="div-sns" class="div-sns">
+        <img src="./img/logo-thumb.png" alt="">
+        <div class="info">
+            <p>運営会社:川崎ブレイブサンダース</p>
+            <p>© KAWASAKI BRAVE THUNDERS . All Rights Reserved</p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
